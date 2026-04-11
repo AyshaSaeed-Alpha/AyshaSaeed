@@ -415,7 +415,7 @@ const portfolioData = [
     id: 1,
     title: "JBeauty Lounge — Luxury Salon Landing Page & Booking System",
     category: "Full-Stack Web App",
-    image: (src = { JBP }),
+    image: JBP,
     description:
       "A high-end salon experience built for conversion and elegance. Features online booking, portfolio gallery, and a smooth client-facing UX. Architected with React, Node.js, and MongoDB for scalability.",
     liveUrl: "https://jbeautylounge.vercel.app/",
@@ -427,7 +427,7 @@ const portfolioData = [
     id: 2,
     title: "Coffee & Beans Brand E-Commerce with Admin Dashboards",
     category: "E-Commerce",
-    image: (src = { ECP }),
+    image: ECP,
     description:
       "End-to-end e-commerce platform built for a specialty coffee brand. Includes admin dashboards, real-time inventory, Stripe payments, and order analytics. Built on the MERN stack with full Stripe integration.",
     liveUrl: "https://coffeeandbeans.vercel.app/",
@@ -439,7 +439,7 @@ const portfolioData = [
     id: 3,
     title: "HavenNest Properties — Real Estate Portfolio & Inquiry Website",
     category: "Real Estate",
-    image: (src = { REP }),
+    image: REP,
     description:
       "Dynamic property listing platform with SEO-optimized architecture and a built-in inquiry system. Designed for agents and brokers who need a professional web presence with backend integrations.",
     liveUrl: "https://havennest.properties.vercel.app/",
@@ -451,7 +451,7 @@ const portfolioData = [
     id: 4,
     title: "Calmline Wellness — Wellness Coach Booking",
     category: "Landing Page / SaaS",
-    image: (src = { CLP }),
+    image: CLP,
     description:
       "Conversion-focused wellness landing page built to book therapy, coaching, and mindfulness sessions. Featuring animated sections, seamless booking flows, and a mobile-first design. Stack: React, Vite, Tailwind CSS, MongoDB, and Express.",
     liveUrl: "https://calmlinewellness.vercel.app/",
