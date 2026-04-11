@@ -202,7 +202,7 @@ img {
 .hero__bg-grid {
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(circle, #d0f0f7 1px, transparent 1px);
+  background-image: radial-gradient(circle, #d0f0f7 6px, transparent 6px);
   background-size: 30px 30px;
   opacity: 0.45;
   pointer-events: none;
@@ -364,7 +364,6 @@ img {
 
 /* about */
 .about {
-  background: var(--off-white);
   overflow: hidden;
 }
 .ab-grid {
