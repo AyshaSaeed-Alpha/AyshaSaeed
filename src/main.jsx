@@ -1,16 +1,7 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import * as ReactGA from "react-ga4";
 import "./index.css";
 import App from "./App.jsx";
-
-ReactGA.initialize("G-FQYJD86S8B");
-
-// send initial pageview
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname + window.location.search,
-});
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
