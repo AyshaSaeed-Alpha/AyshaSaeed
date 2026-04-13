@@ -1,7 +1,6 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import ReactGA from "react-ga4";
-
+import * as ReactGA from "react-ga4";
 import "./index.css";
 import App from "./App.jsx";
 
