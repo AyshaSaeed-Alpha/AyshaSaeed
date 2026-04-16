@@ -20,6 +20,8 @@ import CLP from "./assets/calmlinewelnessPortfolio.png";
 import JBP from "./assets/JbeautyloungePortfolio.png";
 import ECP from "./assets/ecomercewebPortfolio.png";
 import REP from "./assets/realestatePortfolio.png";
+import NBP from "./assets/blog.png";
+import DAP from "./assets/digitalagency.png";
 // ─── NAV ───────────────────────────────────────────────────────────────────
 function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -437,6 +439,42 @@ const portfolioData = [
   },
   {
     id: 3,
+    title: "NeuroByteTalks — JWT-Auth Blog & Article Publishing Platform",
+    category: "Full-Stack Web App",
+    image: NBP,
+    description:
+      "Full-stack MVP blog platform with JWT auth via Appwrite, TinyMCE rich text editing, Cloudinary image uploads, and slug-based SEO routing. Supports draft/publish workflows with author-only edit/delete access control. Built on React, Redux Toolkit, MongoDB, and Node.js.",
+    liveUrl: "https://neurotalks.vercel.app/",
+    githubUrl: "https://github.com/AyshaSaeed-Alpha",
+    upworkUrl:
+      "https://www.upwork.com/freelancers/~01b3c4706288536a95?p=2044669573253566464",
+  },
+
+  {
+    id: 4,
+    title: "Calmline Wellness —Coach Booking LandingPage",
+    category: "Landing Page / SaaS",
+    image: CLP,
+    description:
+      "Conversion-focused wellness landing page built to book therapy, coaching, and mindfulness sessions. Featuring animated sections, seamless booking flows, and a mobile-first design. Stack: React, Vite, Tailwind CSS, MongoDB, and Express.",
+    liveUrl: "https://calmlinewellness.vercel.app/",
+    githubUrl: "https://github.com/AyshaSaeed-Alpha",
+    upworkUrl:
+      "https://www.upwork.com/freelancers/~01b3c4706288536a95?p=2041241060486742016",
+  },
+  {
+    id: 5,
+    title: "Multi-Page Digital Agency Portfolio & Lead Capture Website",
+    category: "Full-Stack Web App",
+    image: DAP, // import your image as DAP
+    description:
+      "Multi-page business portfolio for a digital agency with service showcases, case studies, industry pages, and a structured lead capture flow. Built for scalability and client conversion with a clean UI/UX. Stack: React.js, Node.js, Express.js, Tailwind CSS.",
+    liveUrl: "https://alphatomdynamics.vercel.app/",
+    githubUrl: "https://github.com/AyshaSaeed-Alpha",
+    upworkUrl: "https://www.upwork.com/freelancers/~01b3c4706288536a95",
+  },
+  {
+    id: 6,
     title: "HavenNest Properties — Real Estate Portfolio & Inquiry Website",
     category: "Real Estate",
     image: REP,
@@ -446,18 +484,6 @@ const portfolioData = [
     githubUrl: "https://github.com/AyshaSaeed-Alpha",
     upworkUrl:
       "https://www.upwork.com/freelancers/~01b3c4706288536a95?p=2028730983155027968",
-  },
-  {
-    id: 4,
-    title: "Calmline Wellness — Wellness Coach Booking",
-    category: "Landing Page / SaaS",
-    image: CLP,
-    description:
-      "Conversion-focused wellness landing page built to book therapy, coaching, and mindfulness sessions. Featuring animated sections, seamless booking flows, and a mobile-first design. Stack: React, Vite, Tailwind CSS, MongoDB, and Express.",
-    liveUrl: "https://calmlinewellness.vercel.app/",
-    githubUrl: "https://github.com/AyshaSaeed-Alpha",
-    upworkUrl:
-      "https://www.upwork.com/freelancers/~01b3c4706288536a95?p=2041241060486742016",
   },
 ];
 
