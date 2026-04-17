@@ -1,5 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import "./App.css";
+import { FaInstagram, FaGithub, FaLinkedin } from "react-icons/fa";
+
 import {
   SiJavascript,
   SiHtml5,
@@ -15,6 +17,7 @@ import {
   SiVercel,
   SiGoogleanalytics,
   SiGithub,
+  SiUpwork,
 } from "react-icons/si";
 import CLP from "./assets/calmlinewelnessPortfolio.png";
 import JBP from "./assets/JbeautyloungePortfolio.png";
@@ -38,7 +41,8 @@ function Nav() {
   return (
     <nav className={`nav ${scrolled ? "nav--scrolled" : ""}`}>
       <a href="#hero" className="nav__logo">
-        Aysha Saeed<span>.</span>
+        <img src={"./favicon.svg"} alt="Logo" className="nav__logo-img" />
+        ysha Saeed<span>.</span>
       </a>
       <ul className={`nav__links ${menuOpen ? "nav__links--open" : ""}`}>
         {links.map((l) => (
@@ -101,8 +105,9 @@ function Hero() {
         </h1>
 
         <p className="hero__sub">
-          I craft modern web experiences — pixel-perfect interfaces paired with
-          scalable backends. Clean code. Clear design. Real impact.
+          a Full-Stack Developer & experienced UI/UX Designer with 3+ years of
+          delivering custom websites, UI/UX solutions & more, basically I build
+          the things you wish existed.
         </p>
 
         <div className="hero__cta">
@@ -466,7 +471,7 @@ const portfolioData = [
     id: 5,
     title: "Multi-Page Digital Agency Portfolio & Lead Capture Website",
     category: "Full-Stack Web App",
-    image: DAP, // import your image as DAP
+    image: DAP,
     description:
       "Multi-page business portfolio for a digital agency with service showcases, case studies, industry pages, and a structured lead capture flow. Built for scalability and client conversion with a clean UI/UX. Stack: React.js, Node.js, Express.js, Tailwind CSS.",
     liveUrl: "https://alphatomdynamics.vercel.app/",
@@ -734,11 +739,29 @@ function Footer() {
         <p className="footer__name">
           Aysha Saeed<span>.</span>
         </p>
-        <p className="footer__copy">
-          Full Stack Developer & UI/UX Designer · Sialkot, Pakistan
-        </p>
+        <p className="footer__copy">+92 3174662321 | Sialkot, Pakistan</p>
+        <div className="footer-socials">
+          <a href="https://www.instagram.com/alphatomdynamics" target="_blank">
+            <FaInstagram />
+          </a>
+
+          <a href="https://github.com/AyshaSaeed-Alpha" target="_blank">
+            <FaGithub />
+          </a>
+
+          <a href="https://linkedin.com" target="_blank">
+            <FaLinkedin />
+          </a>
+
+          <a
+            href="https://www.upwork.com/freelancers/~01b3c4706288536a95?viewMode=1"
+            target="_blank"
+          >
+            <SiUpwork />
+          </a>
+        </div>
         <p className="footer__made">
-          Built with React · {new Date().getFullYear()}
+          Copyright © All rights reserved. {new Date().getFullYear()}
         </p>
       </div>
     </footer>
