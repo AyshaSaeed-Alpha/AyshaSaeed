@@ -625,7 +625,7 @@ img {
 }
 .skill-card__list li {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: #454444;
   padding: 0.3rem 0;
   border-bottom: 1px solid var(--border);
 }
@@ -635,19 +635,19 @@ img {
 /* Outer background section (full width) */
 .tech-wrapper {
   width: 100%;
-  height: 180px;
+  height: 150px;
   background: url("/bg-tech-blur.png") center/cover no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  margin: 50px auto;
+  margin: 20px auto;
 }
 
 /* Inner frosted panel */
 .tech-overlay {
   width: 1291px;
-  height: 150px;
+  height: 100px;
   background: rgba(255, 255, 255, 0.45);
   backdrop-filter: blur(12px);
   border-radius: 14px;
@@ -1116,11 +1116,11 @@ img {
 }
 @media (max-width: 1440px) {
   .tech-wrapper {
-    height: 250px;
+    height: 150px;
   }
   .tech-overlay {
     width: 90%;
-    height: 200px;
+    height: 100px;
   }
 }
 
