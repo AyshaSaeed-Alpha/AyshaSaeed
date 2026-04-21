@@ -67,6 +67,90 @@ function Nav() {
 }
 
 // ─── HERO ──────────────────────────────────────────────────────────────────
+// function Hero() {
+//   const words = ["Developer", "Designer", "Creator"];
+//   const [wordIndex, setWordIndex] = useState(0);
+//   const [fade, setFade] = useState(true);
+//
+//   useEffect(() => {
+//     const interval = setInterval(() => {
+//       setFade(false);
+//       setTimeout(() => {
+//         setWordIndex((i) => (i + 1) % words.length);
+//         setFade(true);
+//       }, 400);
+//     }, 2400);
+//     return () => clearInterval(interval);
+//   }, []);
+//
+//   return (
+//     <section id="hero" className="hero">
+//       <div className="hero__bg-grid" aria-hidden="true" />
+//
+//       <div className="hero__content">
+//         <h1 className="hero__name">
+//           <span className="hero__line hero__line--1">Hi, I'm</span>
+//           <span className="hero__line hero__line--2">
+//             <span className="hero__accent">Aysha Saeed</span>
+//             <span className="hero__dot">.</span>
+//           </span>
+//           <span className="hero__line hero__line--3">
+//             Full Stack{" "}
+//             <span
+//               className={`hero__word ${fade ? "hero__word--in" : "hero__word--out"}`}
+//             >
+//               {words[wordIndex]}
+//             </span>
+//           </span>
+//         </h1>
+//
+//         <p className="hero__sub">
+//           a Full-Stack Developer & experienced UI/UX Designer with 3+ years of
+//           delivering custom websites, UI/UX solutions & more, basically I build
+//           the things you wish existed.
+//         </p>
+//
+//         <div className="hero__cta">
+//           <a href="#projects" className="btn btn--primary">
+//             View My Work
+//             <svg viewBox="0 0 20 20" fill="currentColor" className="btn__arrow">
+//               <path
+//                 fillRule="evenodd"
+//                 d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+//                 clipRule="evenodd"
+//               />
+//             </svg>
+//           </a>
+//           <a
+//             href="https://tally.so/r/KYDjKK"
+//             target="_blank"
+//             rel="noreferrer"
+//             className="btn btn--outline"
+//           >
+//             I Want to discuss my project
+//           </a>
+//         </div>
+//
+//         <div className="hero__stats">
+//           <div className="stat">
+//             <span className="stat__num">3+</span>
+//             <span className="stat__label">Years Exp.</span>
+//           </div>
+//           <div className="stat__divider" />
+//           <div className="stat">
+//             <span className="stat__num">10+</span>
+//             <span className="stat__label">Projects Built</span>
+//           </div>
+//           <div className="stat__divider" />
+//           <div className="stat">
+//             <span className="stat__num">5</span>
+//             <span className="stat__label">Tech Stacks</span>
+//           </div>
+//         </div>
+//       </div>
+//     </section>
+//   );
+// }
 function Hero() {
   const words = ["Developer", "Designer", "Creator"];
   const [wordIndex, setWordIndex] = useState(0);
@@ -88,70 +172,92 @@ function Hero() {
       <div className="hero__bg-grid" aria-hidden="true" />
 
       <div className="hero__content">
-        <h1 className="hero__name">
-          <span className="hero__line hero__line--1">Hi, I'm</span>
-          <span className="hero__line hero__line--2">
-            <span className="hero__accent">Aysha Saeed</span>
-            <span className="hero__dot">.</span>
-          </span>
-          <span className="hero__line hero__line--3">
-            Full Stack{" "}
-            <span
-              className={`hero__word ${fade ? "hero__word--in" : "hero__word--out"}`}
-            >
-              {words[wordIndex]}
+        {/* LEFT — text */}
+        <div className="hero__text">
+          <h1 className="hero__name">
+            <span className="hero__line hero__line--1">Hi, I'm</span>
+            <span className="hero__line hero__line--2">
+              <span className="hero__accent">Aysha Saeed</span>
+              <span className="hero__dot">.</span>
             </span>
-          </span>
-        </h1>
+            <span className="hero__line hero__line--3">
+              Full Stack{" "}
+              <span
+                className={`hero__word ${fade ? "hero__word--in" : "hero__word--out"}`}
+              >
+                {words[wordIndex]}
+              </span>
+            </span>
+          </h1>
+          <div className="hero__photo-wrap hero__photo-mobile">
+            <div className="hero__photo-blob" aria-hidden="true" />
+            <img
+              src={"./aysha.webp"}
+              alt="Aysha Saeed"
+              className="hero__photo"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <p className="hero__sub">
+            a Full-Stack Developer & experienced UI/UX Designer with 2+ years of
+            building custom websites, UI/UX solutions & more, basically I build
+            the things you wish existed.
+          </p>
 
-        <p className="hero__sub">
-          a Full-Stack Developer & experienced UI/UX Designer with 3+ years of
-          delivering custom websites, UI/UX solutions & more, basically I build
-          the things you wish existed.
-        </p>
+          <div className="hero__cta">
+            <a href="#projects" className="btn btn--primary">
+              View My Work
+              <svg
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="btn__arrow"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              href="https://tally.so/r/KYDjKK"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn--outline"
+            >
+              Discuss a Project
+            </a>
+          </div>
 
-        <div className="hero__cta">
-          <a href="#projects" className="btn btn--primary">
-            View My Work
-            <svg viewBox="0 0 20 20" fill="currentColor" className="btn__arrow">
-              <path
-                fillRule="evenodd"
-                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                clipRule="evenodd"
-              />
-            </svg>
-          </a>
-          <a
-            href="https://tally.so/r/KYDjKK"
-            target="_blank"
-            rel="noreferrer"
-            className="btn btn--outline"
-          >
-            I Want to discuss my project
-          </a>
+          <div className="hero__stats">
+            <div className="stat">
+              <span className="stat__num">3+</span>
+              <span className="stat__label">Years Exp.</span>
+            </div>
+            <div className="stat__divider" />
+            <div className="stat">
+              <span className="stat__num">10+</span>
+              <span className="stat__label">Projects Built</span>
+            </div>
+            <div className="stat__divider" />
+            <div className="stat">
+              <span className="stat__num">8+</span>
+              <span className="stat__label">Tech Stacks</span>
+            </div>
+          </div>
         </div>
 
-        <div className="hero__stats">
-          <div className="stat">
-            <span className="stat__num">3+</span>
-            <span className="stat__label">Years Exp.</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat">
-            <span className="stat__num">10+</span>
-            <span className="stat__label">Projects Built</span>
-          </div>
-          <div className="stat__divider" />
-          <div className="stat">
-            <span className="stat__num">5</span>
-            <span className="stat__label">Tech Stacks</span>
-          </div>
-        </div>
-
-        <div className="hero__scroll" aria-hidden="true">
-          <div className="hero__scroll-mouse">
-            <div className="hero__scroll-wheel" />
-          </div>
+        {/* RIGHT — photo */}
+        <div className="hero__photo-wrap hero__photo-desktop">
+          <div className="hero__photo-blob" aria-hidden="true" />
+          <img
+            src={"./aysha.webp"}
+            alt="Aysha Saeed"
+            className="hero__photo"
+            loading="eager"
+            decoding="async"
+          />
         </div>
       </div>
     </section>
@@ -354,7 +460,7 @@ function About() {
           </div>
 
           <a href="#contact" className="btn btn--primary ab-cta">
-            Say Hello →
+            Get in Touch →
           </a>
         </div>
       </div>
@@ -396,7 +502,6 @@ function Skills() {
   return (
     <section id="skills" className="skills section">
       <div className="container">
-        <p className="section__eyebrow center">What I Work With</p>
         <h2 className="section__title center">Tech Stack</h2>
         <div className="skills__grid">
           {categories.map((cat) => (
@@ -415,7 +520,47 @@ function Skills() {
     </section>
   );
 }
+//-- tech --- animation
+function TechWeUse() {
+  const icons = [
+    "/icons/react.png",
+    "/icons/js.png",
+    "/icons/tailwind.png",
+    "/icons/node.png",
+    "/icons/redux.png",
+    "/icons/figma.png",
+    "/icons/mongo.png",
+    "/icons/postman.png",
+    "/icons/git.png",
+    "/icons/css.png",
+    "/icons/html.png",
+    "/icons/shopfy.png",
+    "/icons/chrome.png",
+    "/icons/adobe.png",
+    "/icons/wordpress.png",
+  ];
 
+  const scrollingList = [...icons, ...icons];
+
+  return (
+    <section className="tech-wrapper">
+      <div className="tech-overlay">
+        <div className="tech-slider-mask">
+          <div className="tech-slider-track">
+            {scrollingList.map((icon, index) => (
+              <img
+                key={index}
+                src={icon}
+                alt="technology icon"
+                className="tech-icon"
+              />
+            ))}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
 // ─── PORTFOLIO DATA ─────────────────────────────────────────────────────────
 const portfolioData = [
   {
@@ -777,7 +922,9 @@ export default function App() {
         <Hero />
         <About />
         <Projects />
+        <TechWeUse />
         <Skills />
+
         <Contact />
       </main>
       <Footer />
