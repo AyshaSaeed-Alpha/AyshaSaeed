@@ -232,7 +232,7 @@ function Hero() {
 
           <div className="hero__stats">
             <div className="stat">
-              <span className="stat__num">3+</span>
+              <span className="stat__num">2+</span>
               <span className="stat__label">Years Exp.</span>
             </div>
             <div className="stat__divider" />
