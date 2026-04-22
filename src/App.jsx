@@ -430,10 +430,10 @@ function About() {
           <p className="about__desc">
             I'm a <mark className="ab-mark">Full Stack Developer</mark> and{" "}
             <mark className="ab-mark">UI/UX Designer</mark> based in Sialkot,
-            Pakistan, currently pursuing my Associate's degree in Computer
-            Science. With <mark className="ab-mark">3+ years</mark> of hands-on
-            experience, I've built everything from e-commerce platforms to blog
-            systems with custom authentication.
+            Pakistan,<mark className="ab-mark">2+ years</mark> of hands-on
+            experience, I've built everything from e-commerce platforms, Landing
+            pages, Custom Business websites to blog systems with custom
+            authentication.
           </p>
 
           <p className="about__desc">
