@@ -439,7 +439,7 @@ function About() {
           <p className="about__desc">
             My background in{" "}
             <mark className="ab-mark ab-mark--purple">copywriting</mark> means I
-            don't just build websites — I understand how users think, what grabs
+            don't just build websites, I understand how users think, what grabs
             attention, and what drives action. That combination of technical
             depth and communication clarity is what sets my work apart.
           </p>
