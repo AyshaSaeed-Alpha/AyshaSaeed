@@ -455,7 +455,7 @@ function About() {
             </span>
             <span className="ab-badge">
               <span className="ab-dot ab-dot--purple" />
-              3+ Years Exp.
+              2+ Years Exp.
             </span>
           </div>
 
