@@ -16,28 +16,11 @@
   <meta name="author" content="Aysha Saeed" />
   <meta name="robots" content="index, follow" />
 
-  <!-- Open Graph (Facebook, LinkedIn) -->
-  <meta property="og:title" content="Aysha Saeed Portfolio" />
-  <meta
-    property="og:description"
-    content="Full Stack Developer & UI/UX Designer building modern web applications."
-  />
-  <meta property="og:image" content="/preview.png" />
-  <meta property="og:url" content="https://yourdomain.com" />
-  <meta property="og:type" content="website" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Aysha Saeed Portfolio" />
-  <meta
-    name="twitter:description"
-    content="Full Stack Developer & UI/UX Designer portfolio."
-  />
-  <meta name="twitter:image" content="/preview.png" />
-
-  <!-- Canonical URL -->
-  <link rel="canonical" href="https://ayshasaeed.is-a.dev/" />
   <!-- Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-XSTWPNSKFT"
+  ></script>
   <script
     async
     src="https://www.googletagmanager.com/gtag/js?id=G-XSTWPNSKFT"
@@ -48,6 +31,9 @@
       dataLayer.push(arguments);
     }
     gtag("js", new Date());
-    gtag("config", "G-XSTWPNSKFT");
+
+    gtag("config", "G-XSTWPNSKFT", {
+      page_path: window.location.pathname,
+    });
   </script>
 </head>
