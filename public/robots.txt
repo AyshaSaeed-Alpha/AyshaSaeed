@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ayshasaeed.is-a.dev/sitemap.xml
